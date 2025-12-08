@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Process Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Real-Time Process Monitoring Dashboard</h1>
+
+<div class="card">
+    <h2>System Info</h2>
+    <p><b>OS:</b> <span id="os"></span></p>
+    <p><b>Version:</b> <span id="os_version"></span></p>
+    <p><b>CPU Usage:</b> <span id="cpu"></span>%</p>
+    <p><b>RAM Usage:</b> <span id="ram_used"></span> / <span id="ram_total"></span> GB 
+        (<span id="ram_percent"></span>%)</p>
+</div>
+
+<div class="card">
+    <h2>Running Processes</h2>
+    <button onclick="loadProcesses()">Refresh</button>
+
+    <table id="processTable">
+        <tr>
+            <th>PID</th>
+            <th>Name</th>
+            <th>CPU %</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
