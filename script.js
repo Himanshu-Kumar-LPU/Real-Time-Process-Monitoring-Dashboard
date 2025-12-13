@@ -33,7 +33,8 @@ function loadProcesses() {
                         <td>${proc.pid}</td>
                         <td>${proc.name}</td>
                         <td>${proc.cpu_percent}</td>
-                        <td><button onclick="killProcess(${proc.pid})">Kill</button></td>
+                        <td><button onclick="killProcess(${proc.pid})" style="color:white;font-weight:600;font-size:15px;border:none;background-color:red;padding:8px 20px;border-radius:3px;cursor:pointer;">Kill</button></td>
+
                     </tr>
                 `;
                 table.innerHTML += row;

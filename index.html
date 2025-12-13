@@ -2,24 +2,26 @@
 <html>
 <head>
     <title>Real-Time Process Monitoring Dashboard</title>
+    <link rel="icon" type="image/png" href="0c8d2446e8d622fca5d276d113b5418a.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Real-Time Process Monitoring Dashboard</h1>
-
-<div class="card">
-    <h2>System Info</h2>
-    <p><b>OS:</b> <span id="os"></span></p>
-    <p><b>Version:</b> <span id="os_version"></span></p>
-    <p><b>CPU Usage:</b> <span id="cpu"></span>%</p>
-    <p><b>RAM Usage:</b> <span id="ram_used"></span> / <span id="ram_total"></span> GB 
-        (<span id="ram_percent"></span>%)</p>
+<div class="item-1">
+<h1 class="h-1">Real-Time Process Monitoring Dashboard</h1>
 </div>
 
-<div class="card">
+<div class="card cd">
+    <h2>System Info</h2>
+    <p><b>OS:</b> <span id="os" class="cdd"></span></p>
+    <p><b>Version:</b> <span id="os_version" class="cdd"></span></p>
+    <p><b>CPU Usage:</b> <span id="cpu" class="cdd"></span><span class="cdd">%</span></p>
+    <p><b>RAM Usage:</b> <span id="ram_used" class="cdd"></span> <span class="cdd">/</span> <span id="ram_total" class="cdd"></span> <span class="cdd">GB</span> 
+        <span class="cdd">(</span><span id="ram_percent" class="cdd"></span><span class="cdd">%</span><span class="cdd">)</span></p>
+</div>
+
+<div class="card ce">
     <h2>Running Processes</h2>
-    <button onclick="loadProcesses()">Refresh</button>
+    <button class="btn" onclick="loadProcesses()">Refresh</button>
 
     <table id="processTable">
         <tr>
@@ -30,6 +32,9 @@
         </tr>
     </table>
 </div>
+<footer>
+    <div class="ft">&copy; Himanshu Kumar</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
