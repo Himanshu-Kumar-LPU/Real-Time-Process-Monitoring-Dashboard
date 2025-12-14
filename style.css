@@ -1,7 +1,9 @@
+/* UI updated */
+
 body {
     font-family: Arial;
     padding: 20px;
-    background:black;
+    background:rgba(0, 0, 0, 0.89);
 }
 
 .card {
