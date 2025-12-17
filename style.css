@@ -61,7 +61,7 @@ button {
     padding: 15px 0px;
     border-radius: 10px;
     background-color: blue;
-    text-shadow: 0px 0px 5px red;
+    /* text-shadow: 0px 0px 5px red; */
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* box-shadow: 0px 0px 5px 0px black; */
 }
@@ -92,3 +92,57 @@ button {
 .cop{
     color: white;
 }
+ @media only screen and (max-width: 445px){
+    body{
+        background-color: white;
+    }
+     .h-1{
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid black;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color:yellow;
+    /* text-shadow: 0px 0px 5px red; */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+     }
+
+     .cd{
+    background-color: black;
+    border: 2px solid red;
+    box-shadow: 0px 0px 7px 0px white;
+    color: white;
+    font-weight: 900;
+    font-size: 19px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cdd{
+    /* color: rgb(165, 19, 19); */
+    color: red;
+    font-size:20px;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+     text-shadow: 0px 0px 8px rgb(5, 5, 5);
+}
+.ft{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+}
+
+.search-box{
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+}
+

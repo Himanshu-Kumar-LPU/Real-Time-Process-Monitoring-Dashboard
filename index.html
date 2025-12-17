@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Process Monitoring Dashboard</title>
     <link rel="icon" type="image/png" href="0c8d2446e8d622fca5d276d113b5418a.jpg">
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,6 @@
 <div class="item-1">
 <h1 class="h-1">Real-Time Process Monitoring Dashboard</h1>
 </div>
-
 <div class="card cd">
     <h2>System Info</h2>
     <p><b>OS:</b> <span id="os" class="cdd"></span></p>
@@ -22,6 +22,14 @@
 <div class="card ce">
     <h2>Running Processes</h2>
     <button class="btn" onclick="loadProcesses()">Refresh</button>
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search by PID or Process Name..." 
+    onkeyup="filterProcesses()"
+    class="search-box"
+/>
+
 
     <table id="processTable">
         <tr>
@@ -31,6 +39,8 @@
             <th>Action</th>
         </tr>
     </table>
+    <div id="pagination"></div>
+
 </div>
 <footer>
     <div class="ft">&copy; Himanshu Kumar</div>
